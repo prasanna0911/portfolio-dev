@@ -43,6 +43,7 @@ export function ContactForm() {
   const [data, setData] = useState<ContactFormData>(initialData);
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [status, setStatus] = useState<Status>("idle");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const isLoading = status === "loading";
 
@@ -65,21 +66,40 @@ export function ContactForm() {
     }
 
     setStatus("loading");
+    setErrorMessage(null);
+
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "/api/contact";
-      const response = await fetch(apiUrl, {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+          from_name: `${data.name} via Portfolio`,
+        }),
       });
 
-      if (!response.ok) {
-        throw new Error("Request failed");
-      }
+      const result = await response.json();
 
-      setStatus("success");
-      setData(initialData);
+      if (result.success) {
+        setStatus("success");
+        setData(initialData);
+      } else {
+        setErrorMessage(
+          result.message || "Something went wrong. Please try again in a moment."
+        );
+        setStatus("error");
+      }
     } catch {
+      setErrorMessage("Network error. Please try again in a moment.");
       setStatus("error");
     }
   };
@@ -224,7 +244,7 @@ export function ContactForm() {
         {status === "error" && (
           <p className="inline-flex items-center gap-2 text-sm text-red-400">
             <TriangleAlert size={16} />
-            Something went wrong. Please try again in a moment.
+            {errorMessage || "Something went wrong. Please try again in a moment."}
           </p>
         )}
       </div>

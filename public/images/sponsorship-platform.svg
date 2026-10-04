@@ -1,0 +1,129 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_sponsor" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#05070b"/>
+      <stop offset="60%" stop-color="#08101a"/>
+      <stop offset="100%" stop-color="#0b1626"/>
+    </linearGradient>
+    <radialGradient id="glow_blue" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid_pattern2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3b82f6" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg_sponsor)"/>
+  <rect width="1200" height="800" fill="url(#grid_pattern2)"/>
+  <rect width="1200" height="800" fill="url(#glow_blue)"/>
+
+  <!-- Top badge -->
+  <g transform="translate(100, 70)">
+    <rect width="250" height="34" rx="17" fill="#3b82f6" fill-opacity="0.12" stroke="#3b82f6" stroke-opacity="0.4"/>
+    <circle cx="20" cy="17" r="4" fill="#60a5fa"/>
+    <text x="34" y="22" fill="#93c5fd" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" letter-spacing="1">NEXT.JS SSR · CMS PLATFORM</text>
+  </g>
+
+  <!-- Mockup Window Shell -->
+  <g transform="translate(100, 130)">
+    <rect width="1000" height="580" rx="16" fill="#0b111a" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Title Bar -->
+    <rect width="1000" height="48" rx="16" fill="#070a10"/>
+    <rect y="47" width="1000" height="1" fill="#1e293b"/>
+    <circle cx="28" cy="24" r="5.5" fill="#f87171" fill-opacity="0.8"/>
+    <circle cx="48" cy="24" r="5.5" fill="#fbbf24" fill-opacity="0.8"/>
+    <circle cx="68" cy="24" r="5.5" fill="#34d399" fill-opacity="0.8"/>
+    <text x="500" y="29" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">hope-sponsorship.org/donate</text>
+
+    <!-- Top Stats Ribbon -->
+    <g transform="translate(40, 70)">
+      <rect width="290" height="80" rx="10" fill="#0f172a" stroke="#1e293b"/>
+      <text x="20" y="30" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Next.js SSR Migration</text>
+      <text x="20" y="60" fill="#60a5fa" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700">50+ Dynamic Pages</text>
+
+      <g transform="translate(320, 0)">
+        <rect width="290" height="80" rx="10" fill="#0f172a" stroke="#1e293b"/>
+        <text x="20" y="30" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Payment Gateways Integrated</text>
+        <text x="20" y="60" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">Razorpay · Paytm · Paynimo</text>
+      </g>
+
+      <g transform="translate(640, 0)">
+        <rect width="280" height="80" rx="10" fill="#0f172a" stroke="#1e293b"/>
+        <text x="20" y="30" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Architecture</text>
+        <text x="20" y="60" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">100% CMS-Driven</text>
+      </g>
+    </g>
+
+    <!-- Main Visual Donation Flow -->
+    <g transform="translate(40, 180)">
+      <rect width="580" height="350" rx="12" fill="#090e17" stroke="#1e293b"/>
+      <text x="24" y="36" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600">Child Sponsorship &amp; Recurring Pledge Flow</text>
+      
+      <!-- Tier selector -->
+      <g transform="translate(24, 60)">
+        <rect width="160" height="60" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="16" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="11">Monthly Pledge</text>
+        <text x="16" y="48" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">₹ 2,500 / mo</text>
+
+        <g transform="translate(175, 0)">
+          <rect width="160" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="16" y="26" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Education Fund</text>
+          <text x="16" y="48" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">₹ 5,000 / mo</text>
+        </g>
+
+        <g transform="translate(350, 0)">
+          <rect width="160" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+          <text x="16" y="26" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Custom Gift</text>
+          <text x="16" y="48" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">One-time</text>
+        </g>
+      </g>
+
+      <!-- Payment Gateway Selection -->
+      <g transform="translate(24, 145)">
+        <text x="0" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="500">Selected Checkout Gateway</text>
+        
+        <rect y="30" width="530" height="48" rx="8" fill="#0f172a" stroke="#334155"/>
+        <circle cx="24" cy="54" r="5" fill="#3b82f6"/>
+        <text x="40" y="58" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Razorpay Subscriptions &amp; Webhooks</text>
+        <rect x="420" y="42" width="90" height="24" rx="4" fill="#3b82f6" fill-opacity="0.2"/>
+        <text x="440" y="58" fill="#60a5fa" font-family="'Inter', sans-serif" font-size="11">Verified</text>
+
+        <rect y="90" width="530" height="48" rx="8" fill="#0f172a" stroke="#1e293b"/>
+        <circle cx="24" cy="114" r="5" fill="#64748b"/>
+        <text x="40" y="118" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">Paytm UPI &amp; NetBanking</text>
+
+        <rect y="150" width="530" height="48" rx="8" fill="#0f172a" stroke="#1e293b"/>
+        <circle cx="24" cy="174" r="5" fill="#64748b"/>
+        <text x="40" y="178" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="13">TechProcess / Paynimo Gateway</text>
+      </g>
+    </g>
+
+    <!-- Right Side: CMS & Server Architecture -->
+    <g transform="translate(645, 180)">
+      <rect width="315" height="350" rx="12" fill="#090e17" stroke="#1e293b"/>
+      <text x="20" y="32" fill="#f8fafc" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="600">Server Architecture</text>
+      
+      <g transform="translate(20, 55)">
+        <rect width="275" height="65" rx="8" fill="#0f172a" stroke="#1e293b"/>
+        <text x="14" y="24" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">CMS Backend Service</text>
+        <text x="14" y="48" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Headless CMS · Node.js API</text>
+      </g>
+
+      <g transform="translate(20, 135)">
+        <rect width="275" height="65" rx="8" fill="#0f172a" stroke="#1e293b"/>
+        <text x="14" y="24" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">Next.js SSR Rendering</text>
+        <text x="14" y="48" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Server-Side SEO + 50+ routes</text>
+      </g>
+
+      <g transform="translate(20, 215)">
+        <rect width="275" height="100" rx="8" fill="#040609" stroke="#1e293b"/>
+        <text x="14" y="25" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11">Webhooks &amp; Ledger</text>
+        <text x="14" y="50" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">event: payment.authorized</text>
+        <text x="14" y="70" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">status: recurring_active</text>
+        <text x="14" y="90" fill="#22c55e" font-family="'JetBrains Mono', monospace" font-size="10">donor_receipt_dispatched: true</text>
+      </g>
+    </g>
+  </g>
+</svg>

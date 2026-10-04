@@ -1,0 +1,21 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1018"/>
+      <stop offset="100%" stop-color="#0f1622"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg1)"/>
+  <rect width="1200" height="800" fill="url(#grid1)"/>
+  <circle cx="100" cy="300" r="260" fill="url(#glow1)"/>
+  <rect x="120" y="560" width="960" height="1" fill="#3b82f6" fill-opacity="0.25"/>
+  <text x="120" y="220" font-family="monospace" font-size="22" fill="#7c8aa0">PROJECT_01.PREVIEW</text>
+  <text x="120" y="270" font-family="sans-serif" font-size="42" fill="#f5f8ff" font-weight="600">Replace with a real screenshot</text>
+</svg>
